@@ -1,0 +1,12 @@
+// Modules and Variables
+@import "partials/mixins.scss";
+@import "partials/base";
+@import "partials/typography";
+
+@import "header";
+ 
+// Partials
+@import "section/about";
+@import "section/skills";
+@import "section/projects";
+@import "section/contact";

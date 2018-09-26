@@ -1,0 +1,58 @@
+.section-about {
+    padding: 3em 0 4em;
+    .about__wrapper-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        h2 {padding-bottom: 1em; color: $light-blue;}
+    }
+    .about__hobby {
+        padding-top: 4em;
+        .hobby__list {
+            display: flex;
+            justify-content: space-between;
+            .hobby__item {
+                padding: 1em;  
+                text-align: center;
+                cursor: cell;
+                transition: .2s;
+                .hobby__img-wrapper {
+                    border: 2px solid #3a3d48;
+                    padding: 1.5em 1.65em;
+                    display: inline-block;
+                    border-radius: 50%;
+                    transition: .2s;
+                    .hobby__img {object-fit: contain; width: 100%; max-width: 45px; transition: .2s;}
+                }
+                .hobby__title {margin-top: .8em;}
+                &:first-child {padding-left: 0;}
+                &:last-child {padding-right: 0;}
+                &:hover {
+                    .hobby__img-wrapper {
+                        border-style: dotted;
+                        padding: 1.345em 1.495em;
+                        .hobby__img {max-width: 50px;}
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1024px) {
+    .section-about {
+        .about__hobby {
+            padding-top:2.5em;
+            .hobby__list {
+                flex-wrap: wrap;
+                .hobby__item {
+                    &:first-child {padding-left: 1em;}
+                    &:last-child {padding-right:1em;}
+                }
+            }
+        }
+    }
+}
+@media(max-width:576px) {
+    .section-about {padding-top: 0;}
+}

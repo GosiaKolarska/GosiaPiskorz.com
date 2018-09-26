@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Roboto:400,700" 
+    rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- NAVIGATION -->
+        <header class="header" role="banner">
+            <nav class="nav" role="navigation">
+                <ul class="nav__list">
+                    <li class="nav__item active">
+                    <a href="#about" class="nav__link">01<span> about</span></a>
+                    </li>
+                    <li class="nav__item">
+                    <a href="#skills" class="nav__link">02<span> skills</span></a>
+                    </li>
+                    <li class="nav__item">
+                    <a href="#projects" class="nav__link">03<span> projects</span></a>
+                    </li>
+                    <li class="nav__item">
+                    <a href="#contact" class="nav__link">04 <span>contact</span></a>
+                    </li>
+                </ul>
+                <div class="resume">
+                    <a class="resume__link" href="img/frontend_Malgorzata-Piskorz.pdf" target="_blank">
+                        <div class="resume__icon"></div>
+                        <span class="resume__title">CV</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="col col-left">
+            <h1>I am <a href="" class="typewrite" data-period="1500" data-type='[ "Gosia Piskorz.", "Frontend Developer.", "Wordpress Developer.", "freelancer.", "cat lover.", "dressmaker." ]'><span class="wrap">i</span></a></h1>
+            <div class="sections__wrapper">
+                <div id="about" class="section section-about">
+                    <div class="about__wrapper-inner">
+                        <div class="about__main-content">
+                            <h2>I love to create something out of nothing and for me, web design is just like that.</h2>
+                            <p>My goal is to learn everything about web design, to develop my expertise and acquire new skills as a Front End Developer, and finally - to become the most skilled Front End Developer. Yeah!</p>
+                            <p>I always put all my effort to achieve the most clean, user friendly and well designed user interface.</p>
+                        </div>
+                        <div class="about__hobby">
+                            <h3>Besides of coding, what I like...</h3>
+                            <ul class="hobby__list">
+                                <li class="hobby__item">
+                                    <div class="hobby__img-wrapper"><img class="hobby__img" src="img/svg/sewing-machine.svg" alt=""></div>
+                                    <p class="hobby__title">Sew clothes</p>
+                                </li>
+                                <li class="hobby__item">
+                                    <div class="hobby__img-wrapper"><img class="hobby__img" src="img/svg/violin.svg" alt=""></div>
+                                    <p class="hobby__title">Play the violin</p>
+                                </li>
+                                <li class="hobby__item">
+                                    <div class="hobby__img-wrapper"><img class="hobby__img" src="img/svg/cupcake.svg" alt=""></div>
+                                    <p class="hobby__title">Bake cakes</p>
+                                </li>
+                                <li class="hobby__item">
+                                    <div class="hobby__img-wrapper"><img class="hobby__img" src="img/svg/hairstyle.svg" alt=""></div>
+                                    <p class="hobby__title">Do hairstyles</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="skills"class="section section-skills">
+                    <div class="row">
+                        <div class="tools">
+                            <h2>What I use..</h2>
+                            <ol class="tools__list">
+                                <li class="tools__item">
+                                    <div class="tools__icon-wrapper"><img src="img/tools/icon_vscode.png" class="tools__icon" /></div>
+                                    <div class="tools__title">Visual Studio Code / Cloud9</div>
+                                </li>
+                                <li class="tools__item">
+                                    <div class="tools__icon-wrapper"><img src="img/tools/icon_jira.png" class="tools__icon" /></div>
+                                    <div class="tools__title">Jira</div>
+                                </li>
+                                <li class="tools__item">
+                                    <div class="tools__icon-wrapper"><img src="img/tools/icon_ps.png" class="tools__icon" /></div>
+                                    <div class="tools__title">Photoshop</div>
+                                </li>
+                                <li class="tools__item">
+                                    <div class="tools__icon-wrapper"><img src="img/tools/icon_sketch.png" class="tools__icon" /></div>
+                                    <div class="tools__title">Sketch / Zeplin</div>
+                                </li>
+                                <li class="tools__item">
+                                    <div class="tools__icon-wrapper"><img src="img/tools/icon_git.png" class="tools__icon" /></div>
+                                    <div class="tools__title">Git</div>
+                                </li>
+                                <li class="tools__item">
+                                    <div class="tools__icon-wrapper"><img src="img/tools/icon_pp.png" class="tools__icon" /></div>
+                                    <div class="tools__title">PerfectPixel</div>
+                                </li>
+                                <li class="tools__item">
+                                    <div class="tools__icon-wrapper"><img src="img/tools/icon_wp.png" class="tools__icon" /></div>
+                                    <div class="tools__title">WP plugins (ex. ACF, WooCommerce, Ninja Forms, Duplicate Post etc.)</div>      
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-2 skills">
+                            <h2>Skills</h2>
+                            <div class="skills__tooltip">hello</div>
+                            <ul class="skills__list">
+                                <li class="skills__item">
+                                    <div class="skills__title">Html / Css / Sass / Rwd</div>
+                                    <progress class="skills__bar" id="progressBar" value="80" max="100"></progress>
+                                </li>
+                                <li class="skills__item">
+                                    <div class="skills__title">Javascript / Jquery</div>
+                                    <progress class="skills__bar" id="progressBar" value="50" max="100"></progress>
+                                </li>
+                                <li class="skills__item">
+                                    <div class="skills__title">Vue.js</div>
+                                    <progress class="skills__bar" id="progressBar" value="10" max="100"></progress>
+                                </li>
+                                <li class="skills__item">
+                                    <div class="skills__title">Php</div>
+                                    <progress class="skills__bar" id="progressBar" value="35" max="100"></progress>
+                                </li>
+                                <li class="skills__item">
+                                    <div class="skills__title">Wordpress</div>
+                                    <progress class="skills__bar" id="progressBar" value="80" max="100"></progress>
+                                </li>
+                                <li class="skills__item">
+                                    <div class="skills__title">Bootstrap</div>
+                                    <progress class="skills__bar" id="progressBar" value="80" max="100"></progress>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="projects" class="section section-projects">
+                    <ul class="projects__list">
+                        <li class="projects__item">
+                            <div class="projects__img-wrapper"><img class="projects__img" src="img/projects/project-bookingholdings.png" alt=""></div>
+                            <div class="projects__info">
+                                <h3 class="projects__title">Booking Holdings</h3>
+                                <div class="projects__desc">Created and customized Wordpress theme based on design provided, built with Bootstrap.</div>
+                                <a class="projects__link" href="http://bookingholdings.com/" target="_blank">Open project</a>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <div class="projects__img-wrapper"><img class="projects__img" src="img/projects/project-kasprowisko.png" alt=""></div>
+                            <div class="projects__info">
+                                <h3 class="projects__title">Kasprowisko</h3>
+                                <div class="projects__desc">Onepage website, integrated with Wordpress, built with Bootstrap based on design provided.</div>
+                                <a class="projects__link" href="http://kasprowisko.infable.net/" target="_blank">Open project</a>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <div class="projects__img-wrapper"><img class="projects__img" src="img/projects/project-popcollab.png" alt=""></div>
+                            <div class="projects__info">
+                                <h3 class="projects__title">Pop Collab</h3>
+                                <div class="projects__desc">Created and customized Wordpress theme based on design provided.</div>
+                                <a class="projects__link" href="http://popcollab.org/" target="_blank">Open project</a>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <div class="projects__img-wrapper"><img class="projects__img" src="img/projects/project-valleyleadership.png" alt=""></div>
+                            <div class="projects__info">
+                                <h3 class="projects__title">Valley Leadership</h3>
+                                <div class="projects__desc">Created and customized Wordpress theme based on design provided, based on shortcodes, that user can use.</div>
+                                <a class="projects__link" href="http://www.valleyleadership.org" target="_blank">Open project</a>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <div class="projects__img-wrapper"><img class="projects__img" src="img/projects/project-oyg2.png" alt=""></div>
+                            <div class="projects__info">
+                                <h3 class="projects__title">Orange You Glad</h3>
+                                <div class="projects__desc">Created and customized Wordpress theme based on design provided, full of many custom features. Check the 404 page! Is awesome!</div>
+                                <a class="projects__link" href="https://orangeyouglad.com/" target="_blank">Open project</a>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <div class="projects__img-wrapper"><img class="projects__img" src="img/projects/codesprinters.png" alt=""></div>
+                            <div class="projects__info">
+                                <h3 class="projects__title">Scrum</h3>
+                                <div class="projects__desc">Created and customized Wordpress theme based on design provided.</div>
+                                <a class="projects__link" href="http://scrum.org.pl/" target="_blank">Open project</a>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <div class="projects__img-wrapper"><img class="projects__img" src="img/projects/project-sticky-lickits.PNG" alt=""></div>
+                            <div class="projects__info">
+                                <h3 class="projects__title">Sticky Lickits</h3>
+                                <div class="projects__desc">WooCommerce shop created and customized based on design provided.</div>
+                                <a class="projects__link" href="https://stickylickits.com/" target="_blank">Open project</a>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <div class="projects__img-wrapper"><img class="projects__img" src="img/projects/project-bialek.PNG" alt=""></div>
+                            <div class="projects__info">
+                                <h3 class="projects__title">Bialek</h3>
+                                <div class="projects__desc">Created and customized Wordpress theme based on design provided.</div>
+                                <a class="projects__link" href="http://bialek.com/" target="_blank">Open project</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="contact" class="section section-contact">
+                    <h2 class="contact__title">Let's talk...</h2>
+                    <div class="contact__wrapper">
+                        <div class="contact__info">
+                            <div class="contact__content">If You have any questions regard new job or new businesses - feel free to contact with me.</div>
+                            <div class="contact__email">gospiskorz@gmail.com</div>
+                            <ul class="contact__socials">
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <img class="social__icon" src="img/github-logo.png" alt="">
+                                        <img class="social__icon social__icon--hover" src="img/github-logo--gold.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="https://linkedin.com/in/malgorzata-piskorz-a6583882">
+                                        <img class="social__icon"  src="img/linkedin-logo.png" alt="">
+                                        <img class="social__icon social__icon--hover"  src="img/linkedin-logo--gold.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col-right">
+            <div class="col-right__img"></div>
+        </div>
+    </div>
+    <script src="js/lib/jquery-3.3.1.js"></script>
+    <script src="js/lib/jquery.mousewheel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

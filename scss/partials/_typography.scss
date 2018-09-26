@@ -1,0 +1,17 @@
+body {font-family: 'Roboto', sans-serif; color: $light-blue; line-height: normal;}
+p {font-size: 18px; line-height: normal;  margin-bottom: .3em;}
+h1 { font-size: 36px; font-family: 'Bitter', serif;}
+h2 { font-size: 28px; padding-bottom: .5em; font-family: 'Bitter', serif; font-weight: 500; color: $gold;}
+h3 { font-size: 26px; font-family: 'Bitter', serif; color: $gold; font-weight: 500;}
+h4 { font-size: 20px; font-family: 'Bitter', serif; color: $gold;}
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+h1 {color: $gold; padding-bottom: 1.5rem;}
+h1 a {text-decoration: none;}
+h1 a span {color: $gold!important;}
+.bg-title {position: absolute; display: block; font-size: 280px; font-weight: bold; z-index: 1; color: #101319; left: 0; bottom: 0; pointer-events: none; display: none;}
+
+@media(max-width: 1024px) {
+    h1 {font-size: 26px; height: 100px;}
+}

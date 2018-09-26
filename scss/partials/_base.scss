@@ -1,0 +1,67 @@
+$gold: #9a8373;
+$light-blue: #8f93a4;
+
+* {box-sizing: border-box;}
+html, body { margin: 0; padding: 0; }
+body {
+    height: 100vh;
+    background: -moz-linear-gradient(270deg, rgba(47,51,68,1) 0%, rgba(15,17,23,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(47,51,68,1)), color-stop(100%, rgba(15,17,23,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(47,51,68,1) 0%, rgba(15,17,23,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(47,51,68,1) 0%, rgba(15,17,23,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(47,51,68,1) 0%, rgba(15,17,23,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(47,51,68,1) 0%, rgba(15,17,23,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f3344', endColorstr='#0f1117',GradientType=0 ); /* ie6-9 */
+    overflow: hidden;
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .col-right {
+        width: 34%; 
+        z-index: 2;
+        .col-right__img {background-image: url(../img/gosia4.png); height: 100%; background-size: cover; background-repeat: no-repeat;}
+    }
+    .col-left{width: 56%; padding: 5em 3em 7em; max-width: 800px;}
+}
+.section {height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 1.5em 0 2.5em;}
+.sections__wrapper {height: 100%; overflow: hidden;}
+
+@media(max-width: 1024px){
+    .section {padding-bottom: 4em; overflow: unset; height: auto;}
+    body {height: 100%; overflow-y: auto;}
+    .container {
+        padding-top: 7em;
+        flex-direction: column; 
+        .col-left {width: 100%; padding: 5em 3em 3em; order: 2; max-width: 100%;}
+        .col-right {
+            order: 1;
+            height: 320px;
+            width: 100%;
+            position: relative;
+            .col-right__img {
+                max-width: 200px; 
+                position: relative;
+                margin: auto;
+                &:after {
+                    content: '';
+                    border: 6px solid #9a8373;
+                    display: block;
+                    position: absolute;
+                    height: 60%;
+                    width: 100%;
+                    bottom: -6px;
+                    z-index: -1;
+                    left: -12px;
+                    box-shadow: inset 0 0 26px #222222;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 576px){
+    .container {
+        .col-left {padding: 5em 2em 3em}
+    }
+}

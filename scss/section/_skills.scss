@@ -1,0 +1,115 @@
+.section-skills {
+    // display: none;
+    .row {
+        display: flex;
+        .tools {
+            width: 50%;
+            .tools__item {
+                display: flex;
+                align-items: center;
+                padding: .4em 0;
+                padding-right: 1em;
+                cursor: cell;
+                .tools__icon-wrapper {
+                    display: flex;
+                    align-items: center;
+                    padding: .6em;
+                    border: 1px solid $light-blue;
+                    border-radius: 50%;
+                    height: 40px;
+                    width: 40px;
+                    min-width: 40px;
+                    transition: .2s;
+                    .tools__icon {
+                        object-fit: contain;
+                        width: 100%;  
+                    }
+                }
+                .tools__title {padding-left: 1em;}
+                &:hover .tools__icon-wrapper {
+                    padding: .5em;
+                    border-style: dotted;
+                }
+            }
+        }
+        .skills {
+            width: 50%;
+            position: relative;
+            .skills__tooltip {
+                position: absolute;
+                color: #fff;
+                background: #c70033;
+                padding: .5em;
+                text-transform: uppercase;
+                border-radius: 4px;
+                font-size: 14px;
+                letter-spacing: .8px;
+                display: none;
+                &:before {
+                    content: '';
+                    top: -10px;
+                    position: absolute;
+                    bottom: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: transparent transparent #c70033 transparent;
+                }
+                &.active {display: inline-block; position: fixed; top:0;}
+            }
+            .skills__list {
+                .skills__item {
+                    display: flex;
+                    flex-direction: column;
+                    padding: .65em .5em;
+                    .skills__title {width: 100%; text-transform: uppercase; padding-bottom: .5em;}
+                    .skills__bar {
+                        height: 15px; 
+                        width: 100%;
+                    }
+                    progress[value]{
+                        -webkit-appearance: none;
+                        appearance: none;
+                    }
+                    progress[value]::-webkit-progress-bar {
+                        background: #414757;
+                        border-radius: 4px;
+                    }
+                    progress[value]::-webkit-progress-value {
+                        width: 100%;
+                        border-top-left-radius: 4px;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                        border-bottom-left-radius: 4px;
+                        background: #8c7062;
+                        -webkit-animation: animate-stripes 5s linear infinite;
+                        animation: animate-stripes 5s linear infinite;
+                        // background: -moz-linear-gradient(left, #8c7062 0%, #c5ae9e 100%);
+                        // background: -webkit-linear-gradient(left, #8c7062 0%, #c5ae9e 100%);
+                        // background: linear-gradient(to right, #8c7062 0%, #c5ae9e 100%);
+                        // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8c7062', endColorstr='#c5ae9e', GradientType=1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .section-skills {
+        .row {
+            flex-direction: column;
+            .tools {width: 100%; padding-bottom: 3em;}
+            .skills {width: 100%;}
+        }
+    }
+}
+
+@-webkit-keyframes animate-stripes {
+    100% { background-position: -100px 0px; }
+ }
+ 
+ @keyframes animate-stripes {
+    100% { background-position: -100px 0px; }
+ }
